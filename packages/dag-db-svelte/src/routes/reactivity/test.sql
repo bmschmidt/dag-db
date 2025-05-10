@@ -1,6 +1,4 @@
 CREATE TABLE test1 AS SELECT
--- CREATE TABLE paramtest AS SELECT 
---   SELECT UNNEST($left_set::JSON->>'$[*]') as strings;
   UNNEST(ARRAY[1.3, 2.5]) AS foo,
   UNNEST(ARRAY['a', 'b']) AS bar;
 
